@@ -1,8 +1,9 @@
 :root {
   --spacer: 4px;
   --bg-color: #000;
+  --color: #00ffa3;
 }
-*{
+*, *::before, *::after {
   box-sizing: border-box;
 }
 body{
@@ -84,8 +85,67 @@ img{
   margin-bottom: calc(var(--spacer)*9);
   /* 36px; */
 }
-.people{
-  padding: 72px 0;
+.pt-18{
+  padding-top: calc(var(--spacer)*18);
+  /* 72px */
+}
+.pb-18{
+  padding-bottom: calc(var(--spacer)*18);
+  /* 72px */
+}
+.pt-10{
+  padding-top: calc(var(--spacer)*10);
+  /* 40px */
+}
+.pb-10{
+  padding-bottom:calc(var(--spacer)*10);
+  /* 40px */
+}
+.pt-3{
+  padding-top: calc(var(--spacer)*3);
+  /* 12px */
+}
+.pb-3{
+  padding-bottom: calc(var(--spacer)*3);
+  /* 12px */
+}
+.pl-6{
+  padding-left: calc(var(--spacer)*6);
+  /* 24px */
+}
+.pr-6{
+  padding-right: calc(var(--spacer)*6);
+  /* 24px */
+}
+.pt-40{
+  padding-top: calc(var(--spacer)*40);
+  /* 40px */
+}
+.pb-40{
+  padding-bottom: calc(var(--spacer)*40);
+  /* 40px */
+}
+.pt-4{
+  padding-top: calc(var(--spacer)*4);
+  /* 16px */
+}
+.pl-4{
+  padding-left: calc(var(--spacer)*4);
+  /* 16px */
+}
+.pr-4{
+  padding-right: calc(var(--spacer)*4);
+  /* 16px */
+}
+.pb-4{
+  padding-bottom: calc(var(--spacer)*4);
+  /* 16px */
+}
+.pt-24{
+  padding-top: calc(var(--spacer)*24);;
+}
+.pb-24{
+  padding-bottom: calc(var(--spacer)*24);;
 }
 .slogan{
   width: 636px;
@@ -93,29 +153,24 @@ img{
 }
 .name{
   font-size: 8rem;
-  color: #00FFA3;
+  color: var(--color);
   align-self: flex-end;
+}
+.contact:hover{
+  background-color: var(--color);
 }
 .text-style{
   font-size: 1.5rem;
 }
-.nav{
-  padding-top: 40px;
-}
-
 .btn-style{
   width: 185px;
   font-size: 1rem;
   border-radius: 32px;
   background-color: #fff;
   margin-left: auto;
-  padding: 12px 24px;
 }
 .title{
   font-size: 4rem;
-}
-.intro{
-  padding: 160px 0;
 }
 .intro-text{
   width: 526px;
@@ -128,20 +183,15 @@ img{
 .card li{
   width: calc(50% - 12px);
   border:1px solid #E3E3E3;
-  padding: 16px;
 }
 .card-num,.card-title{
   font-size: 1.25em;
 }
 .about-text{
   width: 526px;
-  padding: 160px 0;
 }
 .about-description{
   font-size: 1.5rem;
-}
-.contactme{
-  padding: 96px 0;
 }
 .social-icon{
   object-fit: cover;
@@ -153,9 +203,6 @@ img{
   box-shadow: 0px 0px 16px 3px rgba(144, 148, 255, 0.9);
   border-radius: 40px;
 }
-.myproject{
-  padding: 160px 0;
-}
 .project{
   width: 746px;
   margin-left: auto;
@@ -165,16 +212,19 @@ img{
 }
 .more{
   margin-left: 0;
+  background-color: var(--bg-color);
+}
+.more:hover{
+  background-color: var(--color);
 }
 .footer{
-  padding: 40px 0;
   text-align: center;
 }
 /* f/16/20/64/128
 lh/24/30/36/96/192
 fw400
-m 4/72/36 /24/20/76/32/16/28/*/
-/*p/72/160/16/40   */
+m 4/72/36 /24/20/76/32/16/28/
+/*p/72/160/16/40/12/24/96*/
 /* 
 mr-1
 mr-9
